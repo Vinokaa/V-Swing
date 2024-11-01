@@ -77,4 +77,10 @@ A classe DesenhoImporter é uma subclasse de JComponent, portanto, após criá-l
 
 # Finalização
 
-Esse trabalho foi realizado individualmente por mim como trabalho final da matéria Programação Orientada a Objetos. Foi requisitado um trabalho que utilizasse a biblioteca Swing para criar uma aplicação com interface visual e decidi criar o V-Swing (Visual Swing) como uma aplicação de interface visual que facilitasse a criação de desenhos na biblioteca Swing e, assim, minimizar a codificação e torná-la mais como na realidade, realmente desenhando formas.
+Esse trabalho foi realizado individualmente por mim como trabalho final da matéria Programação Orientada a Objetos.
+<br><br>
+
+Foi requisitado um trabalho que utilizasse a biblioteca Swing para criar uma aplicação com interface visual e decidi criar o V-Swing (Visual Swing) como uma aplicação de interface visual que facilitasse a criação de desenhos na biblioteca Swing e, assim, minimizar a codificação e torná-la mais como na realidade, realmente desenhando formas.
+<br><br>
+
+Acredito que esse foi um dos maiores projetos que fiz até o momento e pretendo prosseguir atualizando-o com correções de bugs e implementações de ferramentas que acabaram ficando de lado, pois não eram o foco do trabalho.
