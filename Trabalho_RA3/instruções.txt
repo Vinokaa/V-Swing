@@ -1,0 +1,5 @@
+Esse projeto é composto em torno de dois códigos (mainExporter.java e mainImporter.java). A ideia é que usuário utilize o mainExporter.java para inserir uma imagem de fundo e assim poder utilizar as formas geométricas disponibilizadas na barra esquerda para fazer um desenho da imagem.
+
+Após ter realizado o desenho, o usuário pode exportar o desenho como .txt (texto) ou .ser (objeto), e então utilizar a classe desenhoImporter.java em algum novo projeto. O novo projeto é simbolizado como o MainImporter.java, sendo um JPanel completamente em branco, mas ao adicionar o arquivo de desenho no JPanel através da classe desenhoImporter (digitando o nome do arquivo no método construtor), o desenho feito anteriormente é adicionado ao novo projeto nas coordenadas e do tamanho que o usuário queira.
+
+Em resumo, o projeto é uma interface visual que é utilizada para fazer desenhos para outras interfaces visuais. Supondo uma situação que um programador queira adicionar o desenho (e não uma imagem) de um carro em sua interface visual, ele pode adicionar a foto do carro no Exporter, desenhá-lo, e depois exportá-lo para utilizar em seu projeto por meio do desenhoImporter.
