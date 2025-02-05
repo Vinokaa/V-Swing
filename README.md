@@ -22,24 +22,24 @@ Select the option *Selecionar Imagem* in the upper left corner and select the im
 
 At the moment, V-Swing has 4 options in its left bar, them being 1 editing tool for the already drawn shapes and 3 geometric shapes for the user to draw. The description of usage of each tool is written below, following the order of the left bar from the top to the bottom:
 
-1. Editing Tool.
+1. Editing Tool
    - After selecting this option, the borders of every drawn shape will be shown and the user can select one of them pressing _Left Mouse Click_ over it. Once the shape's border turns red, the user can edit it following the instructions below. If there are shapes overlapping and the user wants to choose one of them, click at the center of the shape wanted;
    - With a shape selected, the user can delete it by pressing _Del_;
    - With a shape selected, the user can move it by pressing _Left Mouse Click_ and dragging the mouse over the drawing board;
    - Pressing _Esc_ with this option selected will move back to the standard mode, hiding the shapes' border from the screen;
 <br>
 
-2. Polygon, a shape with many points connected by lines.
+2. Polygon, a shape with many points connected by lines
    - Pressing _Left Mouse Click_ while _Polygon_ is selected will set the spot where the mouse is at as a point of the _Polygon_;
    - Pressing _Enter_ while _Polygon_ is selected finishes the polygon's drawing, connecting the last point with the first one;
    - Pressing _Esc_ while _Polígono_ is selected cancels the polygon's drawing, removing all the selected points;
 <br>
 
-3. Ellipse, a shape to draw circular shapes.
+3. Ellipse, a shape to draw circular shapes
    - With _Ellipse_ selected, the user needs to press _Left Mouse Click_ at the 4 extremities of where they want to position the _Ellipse_, in any order they want;
 <br>
 
-4. Line, similar to the Polygon, but doesn't connect the last point with the last one at the end.
+4. Line, similar to the Polygon, but doesn't connect the last point with the first one at the end
    - Pressing _Left Mouse Click_ while _Line_ is selected will set the the spot where the mouse is to a point of the line;
    - After pressing _Left Mouse Click_ once, pressing _Left Mouse Click_ again will continue the line from the last point;
    - Pressing _Esc_ while _Line_ is selected cancels the line's drawing, removing all the selected points;
