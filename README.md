@@ -2,6 +2,8 @@
 
 [![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/Vinokaa/V-Swing/blob/master/README.pt-br.md)
 
+<br>
+
 Um aplicativo de interface visual para fazer desenhos para interfaces visuais.
 
 <br>
