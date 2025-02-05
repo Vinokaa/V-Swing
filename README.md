@@ -4,88 +4,88 @@
 
 <br>
 
-Um aplicativo de interface visual para fazer desenhos para interfaces visuais.
+An UI App used to draw and export drawings to be used in other UI Apps (That use Swing).
 
 <br>
 
-# Inserindo Uma Imagem de Referência
+# Inserting a Background Image as Reference
 
-Selecione a opção *Selecionar Imagem* no canto superior esquerdo e selecione a imagem que deseja posicionar ao fundo.
+Select the option *Selecionar Imagem* in the upper left corner and select the image that you want as background reference.
 
 ![V-swing-1](https://github.com/user-attachments/assets/835d9a6f-ff09-4d9a-b1dc-eef49ed31abc)
 
 <br>
 
-# Desenhando
+# Drawing
 
 ![V-swing-4](https://github.com/user-attachments/assets/9be5595c-6dcd-4359-a22a-ec1e27fb82ba)
 
-Atualmente, o V-Swing possui 4 opções na barra esquerda, sendo elas 1 ferramenta de modificação das formas já desenhadas e 3 formas geométricas para que o usuário possa desenhar, a descrição de uso dessas opções é, de cima para baixo:
+At the moment, V-Swing has 4 options in its left bar, them being 1 editing tool for the already drawn shapes and 3 geometric shapes for the user to draw. The description of usage of each tool is written below, following the order of the left bar from the top to the bottom:
 
-1. Ferramenta de modificação de formas.
-   - Após selecionar esta opção, as bordas de cada forma desenhada será mostrada e o usuário poderá selecionar, utilizando o _Clique Esquerdo_, essa forma e realizar operações com ela, para selecionar uma forma entre formas sobrepostas clique no centro da forma desejada;
-   - Com uma forma selecionada, o usuário pode deletá-la pressionando _Del_;
-   - Com uma forma selecionada, o usuário pode movê-la pressionando _Clique Esquerdo_ e movimentando o mouse na direção desejada;
-   - Pressionar _Esc_ com essa opção selecionada irá retornar ao modo padrão, sumindo com as bordas das formas da tela;
+1. Editing Tool.
+   - After selecting this option, the borders of every drawn shape will be shown and the user can select one of them pressing _Left Mouse Click_ over it. Once the shape's border turns red, the user can edit it following the instructions below. If there are shapes overlapping and the user wants to choose one of them, click at the center of the shape wanted;
+   - With a shape selected, the user can delete it by pressing _Del_;
+   - With a shape selected, the user can move it by pressing _Left Mouse Click_ and dragging the mouse over the drawing board;
+   - Pressing _Esc_ with this option selected will move back to the standard mode, hiding the shapes' border from the screen;
 <br>
 
-2. Polígono, é uma forma que possibilita a conexão de vários pontos através de linhas.
-   - Pressionar _Clique Esquerdo_ enquanto _Polígono_ está selecionado irá definir o local em que o mouse está como um ponto do _Polígono_;
-   - Pressionar _Enter_ enquanto _Polígono_ está selecionado finaliza o desenho do polígono, conectando o último ponto definido com o primeiro;
-   - Pressionar _Esc_ enquanto _Polígono_ está selecionado cancela o desenho do polígono, removendo todos os pontos definidos e não-finalizados;
+2. Polygon, a shape with many points connected by lines.
+   - Pressing _Left Mouse Click_ while _Polygon_ is selected will set the spot where the mouse is at as a point of the _Polygon_;
+   - Pressing _Enter_ while _Polygon_ is selected finishes the polygon's drawing, connecting the last point with the first one;
+   - Pressing _Esc_ while _Polígono_ is selected cancels the polygon's drawing, removing all the selected points;
 <br>
 
-3. Elipse, é uma forma que possibilita desenhar formas circulares.
-   - Com a _Elipse_ selecionada, o usuário deve pressionar _Clique Esquerdo_ nas 4 extremidades em que pretende posicionar a _Elipse_, independentemente da ordem;
+3. Ellipse, a shape to draw circular shapes.
+   - With _Ellipse_ selected, the user needs to press _Left Mouse Click_ at the 4 extremities of where they want to position the _Ellipse_, in any order they want;
 <br>
 
-4. Linha, é similar ao Polígono, porém não une o último ponto ao primeiro no fim.
-   - Pressionar _Clique Esquerdo_ enquanto _Linha_ está selecionada irá definir o local em que o mouse está como um ponto da _Linha_;
-   - Após o primeiro _Clique Esquerdo_, ao pressionar _Clique Esquerdo_ novamente a linha será continuada do ponto anterior;
-   - Pressionar _Esc_ enquanto _Linha_ está selecionado cancela a sequência, ou seja, o próximo _Clique Esquerdo_ não irá continuar do ponto anterior;
+4. Line, similar to the Polygon, but doesn't connect the last point with the last one at the end.
+   - Pressing _Left Mouse Click_ while _Line_ is selected will set the the spot where the mouse is to a point of the line;
+   - After pressing _Left Mouse Click_ once, pressing _Left Mouse Click_ again will continue the line from the last point;
+   - Pressing _Esc_ while _Line_ is selected cancels the line's drawing, removing all the selected points;
 <br>
 
-# Exportando seu Desenho
+# Exporting Your Drawing
 
-Após finalizar seu desenho, o usuário pode selecionar a opção _Exportar_ ao topo esquerdo.
+After finishing drawing, the user can select the option _Exportar_ at the upper left of the screen.
 
 ![V-swing-3](https://github.com/user-attachments/assets/ddb05466-ce59-419f-870b-54d56802ec56)
 
-Ao selecionar a opção _Exportar_, o usuário é questionado sobre o tipo do arquivo de saída, a seguir está uma descrição de cada tipo de arquivo:
+After selecting the option _Exportar_, the user is prompted about the output file extension. A description about these extension types are below:
 
-1. Arquivo de Texto (.txt)
-   - Costuma ser menor em tamanho quando comparado ao Objeto, porém é mais lento para carregar quando importado em outro projeto;
-   - Segue o padrão "Nome da forma{Dados necessário para reconstruir a forma}" em cada linha;
+1. Text File (.txt)
+   - Tends to be smaller in size when compared to the Object type, but is slower to load when imported into other projects;
+   - Every line follows the pattern "Shape's name{Data needed to recreate the shape}", e.g. Polygon{[483,481][503,487][539,489][557,501]} is a Polygon with the starting point at coordinates 483, 481, followed by points at 503, 487 and 539, 589, ending at coordinates 483, 481;
 <br>
 
-2. Objeto (.ser)
-   - Utiliza a interface Serializable padrão do Java para exportar o objeto e seus atributos no momento da exportação;
-   - Costuma ser maior em tamanho quando comparado ao Texto, porém é mais rápido para carregar quando importado em outro projeto;
+2. Object (.ser)
+   - Uses the standard Java Serializable interface to export the Shape object and its attributes at the moment when it's exported;
+   - Tends to be bigger in size when compared to the Text File, but it's faster to load when imported into other projects;
 <br>
 
-# Importando seu Desenho para Outro Projeto
+# Importing Your Drawing into Other Projects
 
-Para importar o desenho feito no V-Swing, o usuário deve utilizar a classe DesenhoImporter presente no package Importer.
+In order to import a drawing made in V-Swing, the use must use the DesenhoImporter class, present in the Importer package.
 
 ![V-swing-5](https://github.com/user-attachments/assets/5a036ade-0e9c-4a97-8b28-da89b38dc961)
 
-A classe DesenhoImporter recebe 5 parâmetros em seu método construtor:
-  - A coordenada X na qual o topo superior esquerdo do desenho estará em seu novo projeto;
-  - A coordenada Y na qual o topo superior esquerdo do desenho estará em seu novo projeto;
-  - A largura do desenho em seu novo projeto;
-  - A altura do desenho em seu novo projeto;
-  - Um objeto do tipo File indicando o caminho do arquivo .txt ou .ser do desenho exportado anteriormente;
+The DesenhoImporter class needs 5 parameters in its constructor:
+  - The X coordinate of the upper left corner of where the drawing will be in your new project;
+  - The Y coordinate of the upper left corner of where the drawing will be in your new project;
+  - The width of the drawing in your new project;
+  - The height of the drawing in your new project;
+  - A File object (java.io.File) pointing to the path of the .txt or .ser file of the previously exported drawing;
 <br>
 
-A classe DesenhoImporter é uma subclasse de JComponent, portanto, após criá-la, o usuário pode utilizá-la como um JComponent comum da biblioteca Swing do Java em seu projeto. A classe DesenhoImporter fará todas as conversões necessárias e fará com que o desenho feito no V-Swing seja adicionado ao seu projeto.
+The DesenhoImporter Class is a subclass of JComponent, meaning that, after creating it, the user can use it as a normal JComponent from Swing's Java library in your project. The DesenhoImporter class will make all the needed adjustments and add your drawing made in V-Swing to your project.
 <br>
 
-# Finalização
+# Ending Notes
 
-Esse trabalho foi realizado individualmente por mim como trabalho final da matéria Programação Orientada a Objetos.
+This project was made individually by me as the final project of the Object-Oriented Programming class (originally Programação Orientada a Objetos).
 <br><br>
 
-Foi requisitado um trabalho que utilizasse a biblioteca Swing para criar uma aplicação com interface visual e decidi criar o V-Swing (Visual Swing) como uma aplicação de interface visual que facilitasse a criação de desenhos na biblioteca Swing e, assim, minimizar a codificação e torná-la mais como na realidade, realmente desenhando formas.
+It was requested that the project used the Swing library to create an application with user interface, so I decided to create V-Swing (Visual Swing) as an UI application that makes creating drawings in the Swing library easier, and with that, minimize coding and making drawing more like it's done in reality, drawing shapes.
 <br><br>
 
-Acredito que esse foi um dos maiores projetos que fiz até o momento e pretendo prosseguir atualizando-o com correções de bugs e implementações de ferramentas que acabaram ficando de lado, pois não eram o foco do trabalho.
+I believe that this was one of my biggest projects up until now, and I intend to keep updating it with bug fixes and new tools that ended up being left out for not being the focus of the project.
