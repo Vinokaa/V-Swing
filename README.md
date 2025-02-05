@@ -51,7 +51,7 @@ After finishing drawing, the user can select the option _Exportar_ at the upper 
 
 ![V-swing-3](https://github.com/user-attachments/assets/ddb05466-ce59-419f-870b-54d56802ec56)
 
-After selecting the option _Exportar_, the user is prompted about the output file extension. A description about these extension types are below:
+After selecting the option _Exportar_, the user is prompted about the file name and the output file extension. A description about these extension types are below:
 
 1. Text File (.txt)
    - Tends to be smaller in size when compared to the Object type, but is slower to load when imported into other projects;
