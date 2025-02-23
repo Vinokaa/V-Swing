@@ -1,8 +1,6 @@
 # V-Swing
 
-[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/Vinokaa/V-Swing/blob/master/README.pt-br.md)
-
-<br>
+[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/Vinokaa/V-Swing/blob/main/README.pt-br.md)
 
 An UI App used to draw and export drawings to be used in other UI Apps (That use Swing).
 
