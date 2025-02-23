@@ -1,8 +1,6 @@
 # V-Swing
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/Vinokaa/V-Swing/blob/master/README.md)
-
-<br>
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/Vinokaa/V-Swing/blob/main/README.md)
 
 Um aplicativo de interface visual para fazer desenhos para interfaces visuais.
 
